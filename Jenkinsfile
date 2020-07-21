@@ -9,7 +9,7 @@ steps {
 
 stage('Docker Build'){
 	steps{
-			sh(script: 'sudo su jenkins')
+			
 			sh(script: 'sudo docker images -a')
 			sh(script : """
 			cd /home/prasad_deepu
