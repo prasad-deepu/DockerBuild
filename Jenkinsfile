@@ -9,11 +9,11 @@ steps {
 
 stage('Docker Build'){
 	steps{
-			sh(script: 'docker images -a')
+			sh(script: 'sudo docker images -a')
 			sh(script : """
 			cd /home/prasad_deepu
-			docker build -t jenkins-pipeline .
-			docker images -a
+			sudo docker build -t jenkins-pipeline .
+			sudo docker images -a
 			""")
 
 }
